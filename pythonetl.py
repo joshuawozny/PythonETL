@@ -43,9 +43,6 @@ def construct_dataframe(r):ls
 def insert_data(df):
     from google.cloud import bigquery
 
-    import os
-    os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="/home/jwozny/projects/pythonetl-372721-0c093f87a5f2.json"
-
 
     client = bigquery.Client()
     job_config = bigquery.job.LoadJobConfig()
